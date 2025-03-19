@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readers SXC</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="mobile-container">
+
+        
+        <div class="topnav">
+          <a href="#home" class="active">Readers SXC</a>
+          <div id="myLinks">
+            <a href="#favourites"> <img src="fav.png" alt=""> Favourites </a>
+           <a href="chap.html">Chapter 1</a>
+           <a href="chap2.html">Chapter 2</a>
+           <a href="chap3.html">Chapter 3</a>
+           <a href="chap4.html">Chapter 4</a>
+           <a href="chapnxt.html">Chapter 5</a>
+           <a href="chapnxt.html">Chapter 6</a>
+           <a href="chapnxt.html">Chapter 7</a>
+           <a href="chapnxt.html">Chapter 8</a>
+           <a href="chapnxt.html">Chapter 9</a>
+
+
+
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        
+        <div style="padding-left:16px">
+          <h3>Home</h3>
+          <p>This is the Class 11 Computer notes app made with HTML and CSS.</p>
+          <p>Click on the hamburger menu  in the top right corner, to access chapters.</p>
+        </div>
+        
+      
+        </div>
+        
+        <link rel="stylesheet" href="floatcss.css">
+        <div id="floating-button">
+          Got any questions?
+        </div>
+      <script src="floatjs.js"></script>
+      
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+         
+          }
+        }
+        </script>
+</html>

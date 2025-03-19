@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: Number System, Conversion, and Boolean Logic</title>
+    <link rel="stylesheet" href="chapcss.css">
+</head>
+<body>
+    
+
+    <header>
+        <h1 class="ttitle">Chapter 2: Number System, Conversion and Boolean Logic</h1>
+    </header>
+
+    <section>
+        <h2 class="ptitle">1's and 2's Complement</h2>
+        <h3>1's Complement</h3>
+        <p>Reciprocal of 1's to 0s and 0s to 1s is its 1's complement. For example, the 1's complement of (1011)<sub>2</sub> is (0100)<sub>2</sub>.</p>
+        <h3>2's Complement</h3>
+        <p>Adding 1 to the 1's complement of a given binary number gives its 2's complement. For example, if (1010)<sub>2</sub> is a given number, its 1's complement is (0101)<sub>2</sub>, and its 2's complement is (0101)<sub>2</sub> + (1)<sub>2</sub> = (0110)<sub>2</sub>.</p>
+    </section>
+
+    <section>
+        <h2 class="ptitle">Subtraction Using 1's and 2's Complement</h2>
+        <p><strong>Rules to remember:</strong> Let the question be X - Y.</p>
+        <ul>
+            <li><strong>Using 1's Complement:</strong> Calculate 1's complement of 'Y' and add it with 'X'. If there is an extra bit, remove it and add it to the remaining bit. If no extra bit, find the 1's complement of the result and add a negative sign.</li>
+            <li><strong>Using 2's Complement:</strong> Calculate 2's complement of 'Y' and add it with 'X'. If there is an extra bit, remove it. If no extra bit, find the 2's complement of the result and add a negative sign.</li>
+        </ul>
+
+        <h3>Example 1</h3>
+        <p><strong>Question:</strong> Subtract (1000)<sub>2</sub> from (111)<sub>2</sub>.</p>
+        <p><strong>Using 1's Complement:</strong> Calculate 1's complement of (1000)<sub>2</sub> = (0111)<sub>2</sub>. Adding (0111)<sub>2</sub> with (111)<sub>2</sub> gives (1110)<sub>2</sub>. The 1's complement of (1110)<sub>2</sub> is (0001)<sub>2</sub>, and the result is -(0001)<sub>2</sub>.</p>
+
+        <p><strong>Using 2's Complement:</strong> Calculate 2's complement of (1000)<sub>2</sub> = (0111)<sub>2</sub> + (1)<sub>2</sub> = (1000)<sub>2</sub>. Adding (1000)<sub>2</sub> with (111)<sub>2</sub> gives (1111)<sub>2</sub>. The 2's complement of (1111)<sub>2</sub> is (0001)<sub>2</sub>, and the result is -(0001)<sub>2</sub>.</p>
+
+        <h3>Example 2</h3>
+        <p><strong>Question:</strong> Subtract (11001)<sub>2</sub> from (11101)<sub>2</sub>.</p>
+        <p><strong>Using 1's Complement:</strong> Calculate 1's complement of (11001)<sub>2</sub> = (00110)<sub>2</sub>. Adding (00110)<sub>2</sub> with (11101)<sub>2</sub> gives (100011)<sub>2</sub>. Removing the extra bit, we get (00100)<sub>2</sub>.</p>
+
+        <p><strong>Using 2's Complement:</strong> Calculate 2's complement of (11001)<sub>2</sub> = (00111)<sub>2</sub>. Adding (00111)<sub>2</sub> with (11101)<sub>2</sub> gives (100100)<sub>2</sub>. Removing the extra bit, we get (00100)<sub>2</sub>.</p>
+    </section>
+
+    <section>
+        <h2 class="ptitle">Boolean Logic</h2>
+        <p>Boolean Algebra is the algebra of logic, dealing with binary variables and logical operations. It is crucial for analyzing and designing logic circuits in modern computers, where variables can only have values 0 (False) or 1 (True). Boolean functions are formed from binary variables and operators like AND, OR, NOT.</p>
+        <h3>Basic Boolean Operators</h3>
+        <ul>
+            <li><strong>AND:</strong> Represented as "A.B" or "A AND B". The result is 1 only if both inputs are 1.</li>
+            <li><strong>OR:</strong> Represented as "A + B" or "A OR B". The result is 1 if at least one input is 1.</li>
+            <li><strong>NOT:</strong> Represented as "A'" or "NOT A". The result is the opposite of the input value.</li>
+        </ul>
+
+        <h3>Logic Gates</h3>
+        <p>Logic gates are circuits that perform operations on binary inputs. Some basic logic gates include:</p>
+        <ul>
+            <li><strong>AND Gate:</strong> Produces output 1 only if both inputs are 1.</li>
+            <li><strong>OR Gate:</strong> Produces output 1 if any input is 1.</li>
+            <li><strong>NOT Gate:</strong> Inverts the input.</li>
+            <li><strong>NAND Gate:</strong> Inverts the output of an AND gate.</li>
+            <li><strong>NOR Gate:</strong> Inverts the output of an OR gate.</li>
+            <li><strong>XOR Gate:</strong> Produces output 1 if one input is different from the other.</li>
+            <li><strong>X-NOR Gate:</strong> Produces output 1 if both inputs are the same.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="ptitle">De-Morgan's Theorem</h2>
+        <p><strong>First Theorem:</strong> The complement of a sum equals the product of its complements: (A + B)' = A' . B'</p>
+        <p><strong>Second Theorem:</strong> The complement of a product equals the sum of its complements: (A . B)' = A' + B'</p>
+    </section>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="index.html">
+            <img src="home.png" alt="Home" style="width: 50px; height: 50px; transition: transform 0.3s;">
+        </a>
+    </div>
+    <link rel="stylesheet" href="floatcss.css">
+    <div id="floating-button">
+      Got any questions?
+    </div>
+  <script src="floatjs.js"></script>
+  
+</body>
+</html>
